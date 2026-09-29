@@ -1,13 +1,17 @@
 Source: vyatta-curl-wrapper
-Maintainer: Vyatta Package Maintainers <DL-vyatta-help@att.com>
-Section: contrib/net
-Priority: extra
-Standards-Version: 3.9.8
-Build-Depends: config-package-dev (>= 5.0), debhelper (>= 9)
+Maintainer: NuDanOS Maintainers <jon@fernandez.tech>
+Section: net
+Priority: optional
+Standards-Version: 4.7.2
+Build-Depends: debhelper-compat (= 13),
+ config-package-dev (>= 5.0)
+Rules-Requires-Root: no
+Vcs-Git: https://github.com/nudanos/vyatta-curl-wrapper.git
+Vcs-Browser: https://github.com/nudanos/vyatta-curl-wrapper
 
 Package: vyatta-curl-wrapper
 Architecture: all
-Depends:
+Depends: 
  curl,
  curl-alternative,
  libipc-run3-perl,
